@@ -7,7 +7,7 @@ vcr.config({
 })
 
 const token = '4079668.b8be642.23e3d425f2184d8b9782ba1fed386c86'
-const badToken = '4079668.b8be642.23e3d425f2184d8b9782ba1fed386c8'
+// const badToken = '4079668.b8be642.23e3d425f2184d8b9782ba1fed386c8'
 const handle = 'samtgarson'
 
 let subject

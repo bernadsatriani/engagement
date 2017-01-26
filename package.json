@@ -22,7 +22,7 @@
     "babel-register": "^6.18.0",
     "chalk": "^1.1.3",
     "eslint": "^3.13.1",
-    "eslint-config-samtgarson": "^0.0.2",
+    "eslint-config-samtgarson": "^0.0.5",
     "nock-vcr-recorder": "^0.1.5",
     "nodemon": "^1.11.0",
     "ora": "^1.1.0",
@@ -38,7 +38,7 @@
     "dev": "node build --watch",
     "build": "node build",
     "test": "ava && xo",
-    "test:watch": "ava --watch",
+    "test:spec": "ava",
     "test:lint": "xo"
   },
   "xo": {

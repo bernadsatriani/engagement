@@ -2,11 +2,11 @@ import micro, { createError } from 'micro'
 import URL from '../lib/url-parser'
 import Instagram from '../lib/instagram'
 
-const app = async (req, res) => {
+const app = async req => {
   const url = new URL(req.url)
   if (!url.valid) throw createError(400, 'Invalid url')
 
-  const ig = new Instagram({ handle: url.username, token: req.headers['authorization'] })
+  const ig = new Instagram({ handle: url.username, token: req.headers.authorization })
   return ig.user
 }
 

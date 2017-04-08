@@ -5,8 +5,8 @@ export default class UrlParser {
     this.url = new URL(url)
   }
   get valid () {
-    return this.url.pathname !== '/' &&
-      this.username.split('/').length === 1
+    return this.url.pathname.length > 1 &&
+      this.url.pathname.split('/').filter(s => s.length).length === 1
   }
   get username () {
     return this.url.pathname.substr(1)

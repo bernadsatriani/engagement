@@ -1,0 +1,18 @@
+GET /v1/users/4079668?access_token=4079668.b8be642.23e3d425f2184d8b9782ba1fed386c86
+accept: application/json, text/plain, */*
+
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+x-ratelimit-remaining: 486
+vary: Cookie, Accept-Language, Accept-Encoding
+pragma: no-cache
+expires: Sat, 01 Jan 2000 00:00:00 GMT
+content-language: en
+cache-control: private, no-cache, no-store, must-revalidate
+x-ratelimit-limit: 500
+date: Sun, 26 Mar 2017 19:55:57 GMT
+set-cookie: csrftoken=j9gix3KIsWOemVW8LOgV0u2SfQQagfH1; expires=Sun, 25-Mar-2018 19:55:57 GMT; Max-Age=31449600; Path=/; Secure
+connection: close
+content-length: 380
+
+{"meta": {"code": 200}, "data": {"id": "4079668", "username": "samtgarson", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/11348090_384992035024860_251466201_a.jpg", "counts": {"media": 121, "follows": 201, "followed_by": 246}, "bio": "Designer/Developer in London, currently @sohohouse", "website": "http://samgarson.com/", "full_name": "Sam Garson"}}

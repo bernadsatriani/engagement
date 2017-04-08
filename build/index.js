@@ -1,6 +1,6 @@
+const path = require('path')
 const webpack = require('webpack')
 const nodemon = require('nodemon')
-const path = require('path')
 const chalk = require('chalk')
 const ora = require('ora')
 const argv = require('yargs').argv

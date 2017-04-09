@@ -9,7 +9,6 @@
   "dependencies": {
     "axios": "^0.15.3",
     "babel-preset-latest": "^6.16.0",
-    "instagram-node-lib": "^0.1.1",
     "micro": "^6.1.0",
     "ramda": "^0.23.0",
     "retell": "^1.1.1",
@@ -35,9 +34,9 @@
     "xo": "^0.17.1"
   },
   "scripts": {
-    "start": "micro .",
-    "dev": "node build --watch",
-    "build": "node build",
+    "start": "micro",
+    "dev": "node ./build --watch",
+    "build": "node ./build",
     "test": "ava && xo",
     "test:spec": "ava",
     "test:lint": "xo"
@@ -49,7 +48,8 @@
     "extends": "samtgarson",
     "rules": {
       "no-console": 0,
-      "no-underscore-dangle": 0
+      "no-underscore-dangle": 0,
+      "no-path-concat": 0
     },
     "overrides": [
       {
@@ -80,5 +80,11 @@
       "babel-polyfill"
     ],
     "babel": "inherit"
+  },
+  "now": {
+    "alias": "engagement",
+    "env": {
+      "INSTAGRAM_TOKEN": "@instagram_token"
+    }
   }
 }

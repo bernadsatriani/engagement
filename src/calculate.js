@@ -3,7 +3,6 @@ import userForHandle from './user'
 import imagesForUser from './images'
 import calculateEngagement from './engagement'
 
-
 export default async handle => {
   const user = await userForHandle(handle)
   return R.pipeP(

@@ -1,5 +1,4 @@
 import R from 'ramda'
-import client from './client'
 
 export const getLikesFromImages = R.map(R.path(['likes', 'count']))
 export const getCommentsFromImages = R.map(R.path(['comments', 'count']))

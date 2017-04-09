@@ -1,9 +1,9 @@
 import test from 'ava'
-import retell from 'retell'
 import * as engagement from '../src/engagement'
 
 const user = require('./fixtures/user-response')
 const images = require('./fixtures/images-response')
+
 const mappedLikes = images.map(i => i.likes.count)
 const mappedComments = images.map(i => i.comments.count)
 const allEngagements = [...mappedLikes, ...mappedComments]

@@ -1,6 +1,6 @@
 import test from 'ava'
 import retell from 'retell'
-import { app } from '../src/main'
+import app from '../src/main'
 
 retell.fixtures = __dirname + '/cassettes'
 

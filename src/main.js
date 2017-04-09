@@ -1,13 +1,12 @@
-import micro, { createError } from 'micro'
+import micro from 'micro'
 import R from 'ramda'
 import getUsername from './url'
 import calculate from './calculate'
 
-const app = R.pipeP(
+export const app = R.pipeP(
   async o => R.prop('url', o),
   getUsername,
-  calculate,
-  R.toString
+  calculate
 )
 
 const srv = micro(app)

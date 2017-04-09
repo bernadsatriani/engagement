@@ -1,4 +1,4 @@
-GET /v1/users/4079668?access_token=4079668.b8be642.23e3d425f2184d8b9782ba1fed386c86
+GET /v1/users/4079668
 accept: application/json, text/plain, */*
 
 HTTP/1.1 200 OK

@@ -13,7 +13,7 @@ const WATCH = argv.watch
 if (WATCH) {
   let runner
   const run = () => nodemon({
-    execMap: { js: 'node' },
+    execMap: { js: 'node --inspect' },
     script: path.join(__dirname, '../index.js'),
     ignore: ['*'],
     watch: ['nothing/'],
@@ -30,13 +30,6 @@ if (WATCH) {
       starter.succeed('Built!')
       runner = run()
     }
-  })
-
-  process.once('SIGINT', () => {
-    log()
-    log(chalk.yellow('👋  Goodbye'))
-    if (runner) runner.once('exit', process.exit)
-    else process.exit()
   })
 } else {
   const starter = ora('Building...').start()

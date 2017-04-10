@@ -1,10 +1,10 @@
-# Micro Starter
-> A micro starter kit
+# Engagement
+> A micro-service for getting Instagram engagement rates
 
-Basic starter kit for a new micro app with XO for linting and Webpack for building.
+## `GET /:username`
 
-## Setup
+Returns the engagement rate for requested username.
 
-1. `git clone git@github.com:samtgarson/micro-starter.git my-app-name`
-2. `cd my-app-name`
-3. `bin/setup`
+## Contribute
+
+Take a look at [micro-starter](https://github.com/samtgarson/micro-starter) for the basics on setting up this application for development.

@@ -1,5 +1,5 @@
 node_modules
 build/_records
 build/env.js
-index.js
+/index.js*
 

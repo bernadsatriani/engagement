@@ -4,7 +4,6 @@ const nodemon = require('nodemon')
 const chalk = require('chalk')
 const ora = require('ora')
 const argv = require('yargs').argv
-const env = require('./env')
 const config = require('./webpack.config.js')
 
 const log = console.log
@@ -12,6 +11,7 @@ const WATCH = argv.watch
 
 if (WATCH) {
   let runner
+  const env = require('./env')
   const run = () => nodemon({
     execMap: { js: 'node --inspect' },
     script: path.join(__dirname, '../index.js'),

@@ -35,8 +35,8 @@
   },
   "scripts": {
     "start": "micro",
-    "dev": "node ./build --watch",
-    "build": "node ./build",
+    "dev": "node ./build/ --watch",
+    "build": "node ./build/index.js",
     "test": "ava && xo",
     "test:spec": "ava",
     "test:lint": "xo"
@@ -85,6 +85,7 @@
     "alias": "engagement",
     "env": {
       "INSTAGRAM_TOKEN": "@instagram_token"
-    }
+    },
+    "private": false
   }
 }

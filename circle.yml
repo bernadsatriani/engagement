@@ -10,9 +10,15 @@ dependencies:
   cache_directories:
     - ~/.cache/yarn
 
+test:
+  override:
+    - yarn test
+
 deployment:
   production:
     branch: master
     commands:
-      - now-pipeline
+      - now --token=$NOW_TOKEN
+      - yarn test:e2e
+      - now --token=$NOW_TOKEN alias
       - now-pipeline-prune

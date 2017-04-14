@@ -2,13 +2,14 @@
   "name": "engagement",
   "version": "0.0.1",
   "description": "Social engagement microservice",
-  "main": "index.js",
+  "main": "src/main.js",
   "repository": "samtgarson/engagement",
   "author": "samtgarson@gmail.com",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.15.3",
     "micro": "^6.1.0",
+    "now-latest": "^0.0.4",
     "ramda": "^0.23.0",
     "retell": "^1.1.1",
     "url-parse": "^1.1.7"
@@ -40,11 +41,13 @@
     "xo": "^0.17.1"
   },
   "scripts": {
-    "start": "micro",
+    "start": "micro index.js",
     "dev": "node ./build/ --watch",
     "build": "node ./build/index.js",
-    "test": "ava && xo && flow check",
-    "test:spec": "ava",
+    "e2e": "node ./build/index.js",
+    "test": "ava test/* && xo && flow check",
+    "test:spec": "ava test/*",
+    "test:e2e": "ava e2e/*",
     "test:lint": "xo"
   },
   "xo": {
@@ -61,7 +64,8 @@
     "rules": {
       "no-console": 0,
       "no-underscore-dangle": 0,
-      "no-path-concat": 0
+      "no-path-concat": 0,
+      "ava/no-ignored-test-files": 0
     },
     "overrides": [
       {

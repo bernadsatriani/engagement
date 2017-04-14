@@ -5,7 +5,13 @@ const chalk = require('chalk')
 const ora = require('ora')
 const argv = require('yargs').argv
 const config = require('./webpack.config.js')
-const env = require('./env') // eslint-disable-line import/no-unresolved
+
+let env
+try {
+  env = require('./env') // eslint-disable-line import/no-unresolved
+} catch (err) {
+  env = {}
+}
 
 const log = console.log
 const WATCH = argv.watch

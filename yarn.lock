@@ -102,13 +102,9 @@ ansi-escapes@1.4.0, ansi-escapes@^1.1.0, ansi-escapes@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-1.4.0.tgz#d3a8a83b319aa67793662b13e761c7911422306e"
 
-ansi-regex@2.1.1:
+ansi-regex@2.1.1, ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
-
-ansi-regex@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.0.0.tgz#c5061b6e0ef8a81775e50f5d66151bf6bf371107"
 
 ansi-styles@^2.2.1:
   version "2.2.1"
@@ -3987,6 +3983,20 @@ now-client@0.4.1:
   dependencies:
     axios "^0.14.0"
 
+now-client@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/now-client/-/now-client-0.7.0.tgz#0f11d87487733bbc6a09d6dc5bc1dde93d032af4"
+  dependencies:
+    request "^2.76.0"
+    request-promise-native "^1.0.3"
+
+now-latest@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/now-latest/-/now-latest-0.0.4.tgz#1e1f07e2cb9330a3c9f1795a3fdbc0e234e46422"
+  dependencies:
+    babel-eslint "^7.2.2"
+    now-client "^0.7.0"
+
 now-pipeline@^1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/now-pipeline/-/now-pipeline-1.7.1.tgz#07466244814896cb73da420f48f25cbd14890fa2"
@@ -4782,6 +4792,13 @@ request-promise-core@1.1.1:
   dependencies:
     lodash "^4.13.1"
 
+request-promise-native@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/request-promise-native/-/request-promise-native-1.0.3.tgz#9cb2b2f69f137e4acf35116a08a441cbfd0c0134"
+  dependencies:
+    request-promise-core "1.1.1"
+    stealthy-require "^1.0.0"
+
 request-promise@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/request-promise/-/request-promise-4.1.1.tgz#26021e4f6f56fd4c309f6bf1ebd8c97a95ac1fb5"
@@ -4790,7 +4807,7 @@ request-promise@^4.1.1:
     request-promise-core "1.1.1"
     stealthy-require "^1.0.0"
 
-request@^2.79.0:
+request@^2.76.0, request@^2.79.0:
   version "2.79.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.79.0.tgz#4dfe5bf6be8b8cdc37fcf93e04b65577722710de"
   dependencies:

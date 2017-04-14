@@ -29,6 +29,8 @@
     "eslint-plugin-flowtype": "^2.30.4",
     "flow-bin": "^0.44.0",
     "nodemon": "^1.11.0",
+    "now": "^4.11.1",
+    "now-pipeline": "^1.7.1",
     "ora": "^1.1.0",
     "request": "^2.79.0",
     "request-promise": "^4.1.1",

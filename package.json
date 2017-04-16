@@ -8,6 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.15.3",
+    "html-loader": "^0.4.5",
     "micro": "^6.1.0",
     "now-latest": "^0.0.4",
     "ramda": "^0.23.0",

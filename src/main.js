@@ -1,10 +1,9 @@
 // @flow
-import R from 'ramda'
+import { pipeP } from 'ramda'
 import getUsername from './url'
 import calculate from './calculate'
+import serve from './serve'
 
-export default R.pipeP(
-  async (o: { url: string }) => R.prop('url', o),
-  getUsername,
-  calculate
-)
+const app = pipeP(async (url: string) => getUsername(url), calculate)
+
+export default async ({ url }: { url: string }, res: {}) => url === '/' ? serve(res) : app(url)

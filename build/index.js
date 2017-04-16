@@ -19,7 +19,7 @@ const WATCH = argv.watch
 if (WATCH) {
   let runner
   const run = () => nodemon({
-    execMap: { js: 'node --inspect' },
+    execMap: { js: 'micro index.js' },
     script: path.join(__dirname, '../index.js'),
     ignore: ['*'],
     watch: ['nothing/'],

@@ -8,8 +8,9 @@ const config = require('./webpack.config.js')
 
 let env
 try {
-  env = require('./env') // eslint-disable-line import/no-unresolved
+  env = require('./env.js') // eslint-disable-line import/no-unresolved
 } catch (err) {
+  console.error(err)
   env = {}
 }
 

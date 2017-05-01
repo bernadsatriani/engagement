@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  p: em Hey, #{name}!
+  p Your token is:
+  strong: code= token
+  br
+  br
+  p Send this as your #[code Authorization] header when making calls to #[code engagement.now.sh]
+  p Keep it safe!
+  br
+  a(href="/") Back home

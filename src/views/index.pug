@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  p #[strong engagement] A micro-service for getting Instagram engagement rates
+  p#badges
+    a(href='https://circleci.com/gh/samtgarson/engagement')
+      img(src='https://camo.githubusercontent.com/1cae041ff23f1962d30e199428ebb68ed1890b57/68747470733a2f2f696d672e736869656c64732e696f2f636972636c6563692f70726f6a6563742f6769746875622f73616d74676172736f6e2f656e676167656d656e742e737667', alt='Build status', data-canonical-src='https://img.shields.io/circleci/project/github/samtgarson/engagement.svg', style='max-width:100%;')
+    a(href='https://github.com/sindresorhus/xo')
+      img(src='https://camo.githubusercontent.com/b9d624cb37169bb3e06fd6deddabfff02b5e43be/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64655f7374796c652d584f2d3565643963372e737667', alt='XO code style', data-canonical-src='https://img.shields.io/badge/code_style-XO-5ed9c7.svg', style='max-width:100%;')
+    a(href='https://github.com/samtgarson/micro-starter')
+      img(src='https://camo.githubusercontent.com/041736ddb6d388d43170bb6f53490ebe125b5f24/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6b69742d6d6963726f2d2d737461727465722d3339383666652e737667', alt='made with micro-starter', data-canonical-src='https://img.shields.io/badge/kit-micro--starter-3986fe.svg', style='max-width:100%;')
+  br
+  h3 Routes
+  ul
+    li #[strong: code GET /:username] #[em Returns the engagement rate for requested username.]
+  h3 Access
+  ul
+    li#link: a(href=authUrl) Get an API token
+    li Include your token in the #[code Authrorization] header when making requests
+  br
+  p
+    a(href='https://github.com/samtgarson/engagement') See the code
+  p By #[a(href='http://samgarson.com') Sam Garson]

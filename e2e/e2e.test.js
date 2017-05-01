@@ -5,13 +5,10 @@ import { get } from 'axios'
 test('deployed url works', async t => {
   const { url } = await nowLatest({ token: process.env.NOW_TOKEN, name: 'engagement' })
   try {
-    const { data, status } = await get(`https://${url}/samtgarson`, {
-      headers: { Authorization: process.env.E2E_TOKEN }
-    })
-    const result = parseFloat(data, 10)
+    const { data, status } = await get(`https://${url}`)
 
     t.is(status, 200)
-    t.is(typeof result, 'number')
+    t.truthy(data.match('<strong>engagement</strong>'))
   } catch (err) {
     t.fail(err)
   }

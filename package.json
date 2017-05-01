@@ -9,8 +9,12 @@
   "dependencies": {
     "axios": "^0.15.3",
     "html-loader": "^0.4.5",
+    "jsonwebtoken": "^7.4.0",
     "micro": "^6.1.0",
+    "micro-route": "^2.3.0",
     "now-latest": "^0.0.4",
+    "pug": "^2.0.0-beta.12",
+    "qs": "^6.4.0",
     "ramda": "^0.23.0",
     "retell": "^1.1.1",
     "url-parse": "^1.1.7"

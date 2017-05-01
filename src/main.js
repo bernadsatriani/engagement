@@ -19,9 +19,9 @@ export default dispatch()
   .otherwise(({ headers: { authorization }, url }: { url: string, headers: { authorization: string } }) => {
     try {
       global.token = jwt.verify(authorization, secretKey).token
-      return app(url)
     } catch (err) {
       console.error(err)
-      throw createError(401, 'Authorization required')
+      throw createError(401, err)
     }
+    return app(url)
   })
